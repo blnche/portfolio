@@ -3,10 +3,21 @@
     --text : #181818;
 
     /* GREEN */
-    --primary100 : #F4FBF7;
-    --primary200 : #E3F7ED;
-    --primary300 : #ACDDC4;
+    --primary100 : #FAFEFC;
+    --primary200 : #F4FBF7;
+    --primary300 : #E3F7ED;
+    --primary400 : #D2F2E1;
+    --primary500 : #C0E9D4;
+    --primary600 : #ACDDC4;
+    --primary700 : #93CCB0;
+    --primary800 : #6EB795;
+    --primary900 : #337357;
+    --primary1000 : #236549;
+    --primary1100 : #357559;
+    --primary1200 : #254234;
+
     --primary400 : #8BCDB0; /* actionable elements*/
+
 
     /* GREY */
     --secondary100 : #D9D9D9;
