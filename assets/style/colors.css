@@ -1,0 +1,14 @@
+:root {
+    --background : #FCFCFC;
+    --text : #181818;
+
+    /* GREEN */
+    --primary100 : #F4FBF7;
+    --primary200 : #E3F7ED;
+    --primary300 : #ACDDC4;
+    --primary400 : #8BCDB0; /* actionable elements*/
+
+    /* GREY */
+    --secondary100 : #D9D9D9;
+    --secondary200 : #BBBBBB;
+}

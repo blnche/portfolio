@@ -1,0 +1,241 @@
+@import 'typeface.css';
+@import 'colors.css';
+@import 'normalize.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 5rem;
+}
+
+/* above is only while testing */
+
+body {
+    background-color: var(--background);
+    font-family: var(--body);
+    font-size: var(--body1-fs);
+}
+
+main {
+    margin: 1.5rem;
+}
+
+/* TYPEFACES */
+
+h1, h2, h3, h4, .body-ft-big {
+    font-family: var(--title-display);
+}
+
+.body-ft-small, .skills-list li, button, footer p {
+    font-family: var(--title-monospace);
+}
+
+h2 {
+    font-size: var(--h2-fs);
+    font-weight: 500;
+    text-align: left;
+}
+
+h3, h4 {
+    font-size: var(--h4-fs);
+}
+
+.body-ft-big {
+    font-size: var(--h4-fs);
+}
+
+/* ======== */
+
+/* HERO SECTION */
+
+.hero {
+    margin-bottom: 10rem;
+    padding: 1rem 1.5rem 5rem 1.5rem;
+    border-radius: 30px;
+    background-color: var(--primary200);
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.hero .body-ft-big {
+    width: 60vw;
+}
+
+.social-links {
+    align-self: center;
+    margin-block: 1.5rem;
+    width: 30vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-img {
+    border-radius: 0.5rem;
+
+    background-image: url('../images/profil-picture.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 9rem;
+    width: 40vw;
+
+    position: absolute;
+    bottom: -12%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+/* ======== */
+
+/* COURSE SECTION */
+
+.course {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10rem;
+}
+
+.course > img {
+    align-self: center;
+
+    border-radius: 0.5rem;
+
+    width: 30vw;
+}
+
+.course-card {
+    margin-block: 1rem;
+    padding: 1.5rem;
+    border-radius: 30px;
+    background-color: var(--primary200);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.course-card p {
+    margin-bottom: 0.5rem;
+}
+
+.skills {
+    margin-top: 1.5rem;
+}
+
+/* ======== */
+
+/* PROJECTS SECTION */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-project-card {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    margin-bottom: 10rem;
+}
+
+.main-project-card h4 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.skills-list {
+    order: 0;
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 20vw;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.skills-list li {
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    /* text-align: center; */
+    font-size: var(--body2-fs);
+}
+
+.projects-actions {
+    order: 1;
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: space-around;
+
+    width: 20vw;
+    margin-right: 2rem;
+    padding-block: 0.5rem;
+}
+
+.projects-actions a {
+    display: inline-block;
+
+    height: 24px;
+    width: 24px;
+}
+
+.projects-actions img {
+    width: 24px;
+    height: 24px;
+}
+
+.main-project-card p {
+    order: 2;
+
+    padding: 1rem 1rem 1.5rem 1rem;
+
+    background-color: var(--primary300);
+    border-radius: 0.5rem;
+
+    position: relative;
+}
+
+.project-img {
+    border:1px solid red;
+    border-radius: 0.5rem;
+    background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 25vh;
+    width: 60vw;
+
+    position: absolute;
+    top: 20%;
+    left: -10%;
+}
