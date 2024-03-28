@@ -1,0 +1,43 @@
+/**
+* buttons.css
+*
+* Index
+* - Button Base
+* - Contact Button
+*/
+
+/**
+* Button Base 
+*/
+
+.button {
+    background-color: var(--primary300);
+    border: 1px solid var(--primary600);
+    border-radius: 0.5rem;
+
+    font-size: var(--body2-fs);
+    font-family: var(--title-monospace);
+    font-weight: 500;
+    color: var(--primary1100);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primary400);
+    border-color: var(--primary700);
+}
+
+/**
+* Contact Button 
+*/
+
+.button-contact {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    width: 9rem;
+}

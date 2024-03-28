@@ -1,0 +1,26 @@
+/**
+* layout.css
+*
+* Index
+* - Sections Layout
+* - Page Layout
+*/
+
+/**
+* Sections Layout
+*/
+
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+}
+
+/**
+* Page Layout
+*/
+
+.margin {
+    margin: 1.5rem;
+}

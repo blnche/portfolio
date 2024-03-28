@@ -1,0 +1,85 @@
+/**
+* navigation.css
+*
+*
+*/
+
+
+.navButton {
+    height: 72px;
+    width: 72px;
+
+    border-radius: 100%;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 9999;
+
+    cursor: pointer;
+}
+
+.open {
+    background-image: url('../images/icons/clarity_window-close-line.svg');
+}
+.close {
+    box-shadow: 0 0 5px var(--secondary100);
+    background-color: var(--secondary100);
+    background-image: url('../images/icons/solar_menu-dots-broken.svg');
+}
+
+nav {
+    display: none;
+
+    background-color: var(--background);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 1rem;
+
+    z-index: 9998;
+}
+
+nav ul {
+    display: block;
+}
+
+nav li {
+    font-size: var(--h1-fs);
+    font-family: var(--title-display);
+
+    margin-block: 1rem;
+    margin-right: 1rem;
+}
+
+nav li:first-child {
+    margin-top: 45vh;
+}
+
+.cvLink {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+
+    height: 72px;
+    width: 146px;
+}
+
+nav .cvLink a {
+    color: var(--primary1100);
+}
+
+nav a {
+    display: flex;
+    justify-content: end;
+}

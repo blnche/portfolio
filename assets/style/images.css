@@ -1,0 +1,91 @@
+/**
+* images.css
+*
+* Index
+* - Site Logo
+* - Hero Profile Picture
+* - Course Languages Logos
+* - Projects Images / Logos
+*/
+
+.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**
+* Site Logo
+*/
+
+.title img {
+    position: relative;
+    z-index: 9999;
+}
+
+/**
+* Hero Profile Picture
+*/
+
+.hero-img {
+    background-image: url('../images/profil-picture.jpeg');
+
+    border-radius: 0.5rem;
+
+    margin: auto;
+    height: 9rem;
+    width: 40vw;
+
+    position: absolute;
+    bottom: -12%;
+    right: 0;
+    left: 0;
+}
+
+/**
+* Course Languages Logos
+*/
+
+.languages-logos {
+    margin-top: 1.5rem;
+}
+
+.languages-logos img {
+    align-self: center;
+
+    width: 15vw;
+
+    border-radius: 0.5rem;
+}
+
+/**
+* Projects Images / Logos
+*/
+
+.projects-actions img {
+    width: 24px;
+    height: 24px;
+}
+
+.project-img {
+    border: 1px solid red;
+    border-radius: 0.5rem;
+
+    height: 277px;
+    width: 360px;
+    
+    position: absolute;
+    top: 20%;
+}
+
+.img1 {
+    background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
+    left: 0;
+    transform: translateX(-40%);
+}
+
+.img2 {
+    background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
+    right: 0;
+    transform: translateX(40%);
+}

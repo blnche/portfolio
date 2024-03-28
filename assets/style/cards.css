@@ -1,0 +1,99 @@
+/**
+* cards.css
+*
+* Index 
+* - Card Base
+* - Course Card
+* - Main Project Card
+* - Project Card
+*/
+
+/**
+* Card Base 
+*/
+
+.card {
+    background-color: var(--primary300);
+    border-radius: 30px;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+* Course Card 
+*/
+
+.course-card {
+    margin-block: 1.5rem;
+    
+    align-items: center;
+    
+    text-align: center;
+}
+
+/**
+* Main Project Card
+*/
+
+.main-project-card p {
+    background-color: var(--primary400);
+    border-radius: 0.5rem;
+
+    width: 75vw;
+    padding: 1rem 1rem 1.5rem 1rem;
+
+    position: relative;
+    top: 35px;
+}
+
+/**
+* Project Card
+*/
+
+.project-card {
+    margin-block: 1.5rem;
+    padding: 0.5rem;
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px var(--secondary100);
+}
+
+.project-card .skills-list {
+    order: 0;
+    align-self: flex-start;
+
+    margin: 0;
+    padding: 0.15rem;
+
+    flex-direction: row;
+    position: initial;
+}
+
+.project-card .skills-list li {
+    margin-inline: 0.2rem;
+}
+
+.project-card h5 {
+    order: 1;
+
+    padding: 0.15rem;
+}
+
+.project-card p {
+    order: 2;
+    align-self: flex-start;
+
+    width: 70vw;
+}
+
+.project-card .projects-actions {
+    order: 3;
+    align-self: flex-end;
+    
+    margin: 0;
+    padding-bottom: 0;
+
+    position: initial;
+}

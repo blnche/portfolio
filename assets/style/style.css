@@ -1,18 +1,34 @@
-@import 'typeface.css';
-@import 'colors.css';
+@import 'variables/typeface.css';
+@import 'variables/colors.css';
 @import 'normalize.css';
+@import 'cards.css';
+@import 'layout.css';
+@import 'navigation.css';
+@import 'images.css';
+@import 'buttons.css';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a, a:visited, a:active {
+
+html, 
+body {
+    overflow-x: hidden; /*To prevent second image of main projects to create scroll bar*/
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--body);
+    font-size: var(--body1-fs);
+}
+
+a, 
+a:visited, 
+a:active {
     color: var(--text);
     text-decoration: none;
-}
-i {
-    color: black;
 }
 
 .hidden {
@@ -23,146 +39,20 @@ ul {
     list-style: none;
 }
 
-img {
-    width: 5rem;
-}
-
-/* above is only while testing */
-
-html, body {
-    overflow-x: hidden; /*To prevent second image of main projects to create scroll bar*/
-}
-
-body {
-    background-color: var(--background);
-    font-family: var(--body);
-    font-size: var(--body1-fs);
-}
-
-/* HEADER */
-
-header {
-    margin: 1.5rem;
-}
-
-.title img {
-    position: relative;
-    z-index: 9999;
-}
-
-.navButton {
-    height: 72px;
-    width: 72px;
-
-    border-radius: 100%;
-
-    position: fixed;
-    right: 1rem;
-    bottom: 3rem;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    z-index: 9999;
-
-    cursor: pointer;
-}
-
-.open {
-    background-image: url('../images/icons/clarity_window-close-line.svg');
-}
-.close {
-    box-shadow: 0 0 5px var(--secondary100);
-    background-color: var(--secondary100);
-    background-image: url('../images/icons/solar_menu-dots-broken.svg');
-}
-
-nav {
-    display: none;
-
-    background-color: var(--background);
-
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    padding: 1rem;
-
-    z-index: 9998;
-}
-
-nav ul {
-    display: block;
-}
-
-nav li {
-    font-size: var(--h1-fs);
-    font-family: var(--title-display);
-
-    margin-block: 1rem;
-    margin-right: 1rem;
-}
-
-nav li:first-child {
-    margin-top: 45vh;
-}
-
-.cvLink {
-    align-self: flex-start;
-
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-
-    height: 72px;
-    width: 146px;
-
-    padding: 0;
-
-    font-size: var(--body2-fs);
-    font-family: var(--title-monospace);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    cursor: pointer;
-}
-
-.cvLink a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--primary1100);
-    
-    width: 100%;
-    height: 100%;
-}
-
-nav a {
-    display: flex;
-    /* align-content: end; */
-    justify-content: end;
-}
-
-/* ====== */
-
-main {
-    margin: 1.5rem;
-}
-
 /* TYPEFACES */
 
-h1, h2, h3, h4, .body-ft-big {
+h1, 
+h2, 
+h3, 
+h4, 
+.body-ft-big {
     font-family: var(--title-display);
 }
 
-.body-ft-small, .skills-list li, button, footer p {
+.body-ft-small, 
+.skills-list li, 
+button, 
+footer p {
     font-family: var(--title-monospace);
 }
 
@@ -177,19 +67,23 @@ h3 {
     margin-block: 2rem;
 }
 
-h4, .body-ft-big {
+h4, 
+.body-ft-big {
     font-size: var(--h5-fs);
+    margin: 1rem;
 }
 
 h5 {
     font-size: var(--h5-fs);
 }
 
-h3, .more-projects h4  {
+h3, 
+.more-projects h4  {
     position: relative;
 }
 
-h3:after, .more-projects h4:after {
+h3:after, 
+.more-projects h4:after {
     content: "";
     display: block;
     width: 100%;
@@ -201,18 +95,16 @@ h3:after, .more-projects h4:after {
     position: absolute;
 }
 
-/* ======== */
+/* ----------------------------- */
 
-/* HERO SECTION */
+/* ----------------------------- */
+/**  
+* HERO SECTION
+*/
 
 .hero {
     margin-bottom: 15rem;
-    padding: 1rem 1.5rem 5rem 1.5rem;
-    border-radius: 30px;
-    background-color: var(--primary300);
-
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 3.5rem;
 
     position: relative;
 }
@@ -223,147 +115,88 @@ h3:after, .more-projects h4:after {
 
 .social-links {
     align-self: center;
+
     margin-block: 1.5rem;
     width: 30vw;
 
     display: flex;
     justify-content: space-between;
+    color: black;
 }
 
-.hero-img {
-    border-radius: 0.5rem;
-
-    background-image: url('../images/profil-picture.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    height: 9rem;
-    width: 40vw;
-
-    position: absolute;
-    bottom: -12%;
-    right: 0;
-    left: 0;
-    margin: auto;
+.social-links i:hover {
+    color: var(--primary1100);
 }
 
-.scroll {
+.scrollText {
     position: relative;
-    bottom: -19rem;
+    bottom: -14rem;
     left: -2rem;
     padding-inline: 0.5rem;
 }
-.scroll:after {
+
+.scrollText:after {
     content: "";
     width: 1.5rem;
     height: 1px;
     background: var(--text);
     position: absolute;
-    top: 50%;
+    bottom: -60%;
+    left: 1.5rem;
+
+    transform: rotate(90deg);
 }
 
-/* ======== */
-
-/* COURSE SECTION */
-
-.course {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 2rem;
-}
-
-.course > img {
-    align-self: center;
-
-    border-radius: 0.5rem;
-
-    width: 30vw;
-}
-
-.course-card {
-    margin-block: 1rem;
-    padding: 1.5rem;
-    border-radius: 30px;
-    background-color: var(--primary300);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-}
-
-.course-card p {
-    margin-bottom: 0.5rem;
-}
-
-.skills {
-    margin-top: 1.5rem;
-}
-
-/* ======== */
-
-/* PROJECTS SECTION */
-
-.projects {
-    display: flex;
-    flex-direction: column;
-}
+/* ----------------------------- */
+/**  
+* PROJECTS SECTION
+*/
 
 .main-project-card {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 4rem;
 
     position: relative;
-
-    margin-bottom: 5rem;
 }
 
 .main-project-card h4 {
-    margin: 1rem;
-    text-align: center;
-    justify-self: center;
+    align-self: center;
 }
 
-.skills-list, .projects-actions {
+.skills-list, 
+.projects-actions {
     margin-inline: 1.5rem;
+    width: 20vw;
+
+    display: flex;
+
+    position: relative;
+    top: 35px;
 }
 
 .skills-list {
     order: 0;
     align-self: flex-end;
 
-    display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 20vw;
     margin-top: 1rem;
-
-    position: relative;
-    top: 25px;
 }
 
 .skills-list li {
     margin-block: 0.5rem;
-    text-transform: uppercase;
+
     font-size: var(--small-fs);
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .projects-actions {
     order: 1;
 
-    display: flex;
     justify-content: space-around;
 
-    width: 20vw;
     padding-block: 0.5rem;
-
-    position: relative;
-    top: 35px;
 }
 
 .projects-actions a {
@@ -373,24 +206,8 @@ h3:after, .more-projects h4:after {
     width: 24px;
 }
 
-.projects-actions img {
-    width: 24px;
-    height: 24px;
-}
-
 .main-project-card p {
     order: 2;
-
-    width: 75vw;
-
-    /* margin-top: 5rem; */
-    padding: 1rem 1rem 1.5rem 1rem;
-
-    background-color: var(--primary400);
-    border-radius: 0.5rem;
-
-    position: relative;
-    top: 35px;
 }
 
 .right {
@@ -401,125 +218,39 @@ h3:after, .more-projects h4:after {
     align-self: flex-start;
 }
 
-.project-img {
-    border:1px solid red;
-    border-radius: 0.5rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    height: 277px;
-    width: 360px;
-    
-    position: absolute;
-    top: 20%;
-}
-
-.img1 {
-    background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
-    left: 0;
-    transform: translateX(-40%);
-}
-
-.img2 {
-    background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
-    right: 0;
-    transform: translateX(40%);
-}
-
-.more-projects {
-    margin-bottom: 2rem;
-}
-
 .more-projects h4 {
-    margin-block: 3rem 2rem;
+    margin-block: 3rem 3rem;
     text-align: center;
 }
 
-.project-card {
-    margin-block: 1.5rem;
-    padding: 0.5rem;
-    background-color: var(--primary300);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5px var(--secondary100);
+/* ----------------------------- */
 
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card .skills-list {
-    order: 0;
-    flex-direction: row;
-    position: initial;
-    align-self: flex-start;
-    margin: 0;
-    padding: 0.15rem;
-}
-.project-card .skills-list li {
-    margin-inline: 0.2rem;
-}
-.project-card h5 {
-    order: 1;
-    padding: 0.15rem;
-}
-
-.project-card p {
-    order: 2;
-    align-self: flex-start;
-    width: 70vw;
-}
-
-.project-card .projects-actions {
-    order: 3;
-    align-self: flex-end;
-    position: initial;
-    margin: 0;
-    padding-bottom: 0;
-}
-
-/* ====== */
-
-/* CONTACT SECTION */
+/* ----------------------------- */
+/**  
+* CONTACT SECTION
+*/
 
 .contact {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    /* margin-bottom: 10rem; */
     text-align: center;
-
 }
 .contact p {
     margin: 0.5rem;
     width: 70vw;
 }
 
-.button {
-    margin: 1rem;
-    padding: 0.5rem 1rem;
-    width: 8rem;
+/* ----------------------------- */
 
-    border-radius: 0.5rem;
-    background-color: var(--primary300);
-    border: 1px solid var(--primary600);
-
-    font-size: var(--body2-fs);
-    font-weight: 500;
-    color: var(--primary1100);
-}
-
-.button:hover {
-    background-color: var(--primary400);
-    border-color: var(--primary700);
-}
-
-/* ======= */
-
-/* FOOTER */
+/* ----------------------------- */
+/**  
+* FOOTER SECTION
+*/
 
 footer {
-    background-color: var(--primary300);
     padding: 1rem;
+
+    background-color: var(--primary300);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,3 +259,5 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* ----------------------------- */
