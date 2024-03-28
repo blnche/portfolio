@@ -6,7 +6,10 @@
     margin: 0;
     padding: 0;
 }
-
+a, a:visited, a:active {
+    color: var(--text);
+    text-decoration: none;
+}
 i {
     color: black;
 }
@@ -25,14 +28,54 @@ img {
 
 /* above is only while testing */
 
+html, body {
+    overflow-x: hidden; /*To prevent second image of main projects to create scroll bar*/
+}
+
 body {
     background-color: var(--background);
     font-family: var(--body);
     font-size: var(--body1-fs);
 }
 
+/* HEADER */
+
+header {
+    margin: 2rem 1.5rem;
+}
+
+.navButton {
+    background-color: var(--primary400);
+    height: 72px;
+    width: 72px;
+    border-radius: 100%;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 9999;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px var(--secondary100);
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    background-color: var(--background);
+}
+
+/* ====== */
+
 main {
-    margin: 1.5rem;
+    margin: 3rem 1.5rem;
 }
 
 /* TYPEFACES */
@@ -46,17 +89,38 @@ h1, h2, h3, h4, .body-ft-big {
 }
 
 h2 {
-    font-size: var(--h2-fs);
+    font-size: var(--h3-fs);
     font-weight: 500;
     text-align: left;
 }
 
-h3, h4 {
+h3 {
     font-size: var(--h4-fs);
+    margin-block: 2rem;
 }
 
-.body-ft-big {
-    font-size: var(--h4-fs);
+h4, .body-ft-big {
+    font-size: var(--h5-fs);
+}
+
+h5 {
+    font-size: var(--h5-fs);
+}
+
+h3, .more-projects h4  {
+    position: relative;
+}
+
+h3:after, .more-projects h4:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-radius: 0.5rem;
+    background: var(--text);
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 /* ======== */
@@ -64,7 +128,7 @@ h3, h4 {
 /* HERO SECTION */
 
 .hero {
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     padding: 1rem 1.5rem 5rem 1.5rem;
     border-radius: 30px;
     background-color: var(--primary200);
@@ -114,7 +178,7 @@ h3, h4 {
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
 }
 
 .course > img {
@@ -155,25 +219,13 @@ h3, h4 {
     flex-direction: column;
 }
 
-.main-project-card:last-of-type {
-    margin-bottom: 10rem;
-
-}
-
 .main-project-card {
     display: flex;
     flex-direction: column;
 
-    /* display: grid;
-    grid-template-rows: 5vh 150px 50px 2rem; */
-
     position: relative;
 
-    margin-bottom: 10rem;
-}
-.main-project-card > * {
-    /* justify-self: end;
-    align-self: center; */
+    margin-bottom: 2rem;
 }
 
 .main-project-card h4 {
@@ -248,9 +300,11 @@ h3, h4 {
     position: relative;
     top: 35px;
 }
+
 .right {
     align-self: flex-end;
 }
+
 .left {
     align-self: flex-start;
 }
@@ -271,11 +325,104 @@ h3, h4 {
 
 .img1 {
     background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
-    left: -40%;
+    left: 0;
+    transform: translateX(-40%);
 }
 
 .img2 {
     background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
-    right: -40%;
+    right: 0;
+    transform: translateX(40%);
 }
 
+.more-projects {
+    margin-bottom: 2rem;
+}
+
+.more-projects h4 {
+    margin-block: 3rem 2rem;
+    text-align: center;
+}
+
+.project-card {
+    margin-block: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--primary200);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px var(--secondary100);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .skills-list {
+    order: 0;
+    flex-direction: row;
+    position: initial;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0.15rem;
+}
+.project-card .skills-list li {
+    margin-inline: 0.2rem;
+}
+.project-card h5 {
+    order: 1;
+    padding: 0.15rem;
+}
+
+.project-card p {
+    order: 2;
+    align-self: flex-start;
+    width: 70vw;
+}
+
+.project-card .projects-actions {
+    order: 3;
+    align-self: flex-end;
+    position: initial;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+/* ====== */
+
+/* CONTACT SECTION */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 10rem; */
+    text-align: center;
+
+}
+.contact p {
+    margin: 1rem;
+    width: 70vw;
+
+}
+
+.button {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary400);
+    font-size: var(--body2-fs);
+}
+
+/* ======= */
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary200);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+}
