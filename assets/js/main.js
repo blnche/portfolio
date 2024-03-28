@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 navButton.classList.add('open');
                 navButton.classList.remove('close');
 
-                nav.style.display = 'flex';
+                nav.style.display = 'block';
 
             } else {
                 console.log('nav is open');

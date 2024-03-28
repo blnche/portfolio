@@ -44,6 +44,11 @@ header {
     margin: 1.5rem;
 }
 
+.title img {
+    position: relative;
+    z-index: 9999;
+}
+
 .navButton {
     height: 72px;
     width: 72px;
@@ -52,7 +57,7 @@ header {
     right: 1rem;
     bottom: 3rem;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 9998;
     
     display: flex;
     justify-content: center;
@@ -65,7 +70,7 @@ header {
 }
 .close {
     box-shadow: 0 0 5px var(--secondary100);
-    background-color: var(--primary400);
+    background-color: var(--secondary100);
     background-image: url('../images/icons/solar_menu-dots-broken.svg');
 }
 
@@ -78,34 +83,55 @@ nav {
     top: 0;
     left: 0;
 
-    width: 100vw;
+    width: 92vw;
     height: 100vh;
 
     padding: 1rem;
 
-    z-index: 9998;
-
-
+    z-index: 9997;
 }
 
 nav ul {
     display: block;
 }
 
+nav li {
+    font-size: var(--h1-fs);
+    font-family: var(--title-display);
+
+    margin-block: 1rem;
+    margin-right: 1rem;
+
+}
+
+nav li:first-child {
+    margin-top: 50vh;
+}
+
 nav .cvLink {
     align-self: flex-start;
 
     position: absolute;
-    bottom: 3rem;
+    bottom: 4rem;
+    left: 2rem;
 
     height: 72px;
     width: 146px;
 
+    padding: 0;
+
     font-size: var(--body2-fs);
+    font-family: var(--title-monospace);
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+nav a {
+    display: flex;
+    /* align-content: end; */
+    justify-content: end;
 }
 
 /* ====== */
@@ -276,7 +302,7 @@ h3:after, .more-projects h4:after {
 
     position: relative;
 
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .main-project-card h4 {
@@ -449,17 +475,22 @@ h3:after, .more-projects h4:after {
 
 }
 .contact p {
-    margin: 1rem;
+    margin: 0.5rem;
     width: 70vw;
-
 }
 
 .button {
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    width: 7rem;
+    height: 2rem;
+
     border-radius: 0.5rem;
-    background-color: var(--primary400);
+    background-color: var(--primary200);
+    border: 1px solid var(--primary300);
+
     font-size: var(--body2-fs);
+    font-weight: 500;
 }
 
 /* ======= */
