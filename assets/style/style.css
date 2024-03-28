@@ -41,41 +41,77 @@ body {
 /* HEADER */
 
 header {
-    margin: 2rem 1.5rem;
+    margin: 1.5rem;
 }
 
 .navButton {
-    background-color: var(--primary400);
     height: 72px;
     width: 72px;
     border-radius: 100%;
     position: fixed;
-    top: 1rem;
     right: 1rem;
+    bottom: 3rem;
     cursor: pointer;
     z-index: 9999;
     
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.open {
+    background-image: url('../images/icons/clarity_window-close-line.svg');
+}
+.close {
     box-shadow: 0 0 5px var(--secondary100);
+    background-color: var(--primary400);
+    background-image: url('../images/icons/solar_menu-dots-broken.svg');
 }
 
 nav {
     display: none;
+
+    background-color: var(--background);
+
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100vw;
     height: 100vh;
+
+    padding: 1rem;
+
     z-index: 9998;
-    background-color: var(--background);
+
+
+}
+
+nav ul {
+    display: block;
+}
+
+nav .cvLink {
+    align-self: flex-start;
+
+    position: absolute;
+    bottom: 3rem;
+
+    height: 72px;
+    width: 146px;
+
+    font-size: var(--body2-fs);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ====== */
 
 main {
-    margin: 3rem 1.5rem;
+    margin: 1.5rem;
 }
 
 /* TYPEFACES */
@@ -128,7 +164,7 @@ h3:after, .more-projects h4:after {
 /* HERO SECTION */
 
 .hero {
-    margin-bottom: 4rem;
+    margin-bottom: 15rem;
     padding: 1rem 1.5rem 5rem 1.5rem;
     border-radius: 30px;
     background-color: var(--primary200);
@@ -168,6 +204,21 @@ h3:after, .more-projects h4:after {
     right: 0;
     left: 0;
     margin: auto;
+}
+
+.scroll {
+    position: relative;
+    bottom: -19rem;
+    left: -2rem;
+    padding-inline: 0.5rem;
+}
+.scroll:after {
+    content: "";
+    width: 1.5rem;
+    height: 1px;
+    background: var(--text);
+    position: absolute;
+    top: 50%;
 }
 
 /* ======== */
