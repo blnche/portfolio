@@ -70,7 +70,7 @@
 }
 
 .project-img {
-    border: 1px solid red;
+    border: 1px solid var(--text);
     border-radius: 0.5rem;
 
     height: 277px;
@@ -88,8 +88,24 @@
     transform: translateX(-40%);
 }
 
+.img1:before {
+    content: url('../images/project-card-symbols/windowLogosRight.svg');
+
+    position: absolute;
+    right: 0.5rem;
+    top: -1rem;
+}
+
 .img2 {
     background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
     right: 0;
     transform: translateX(40%);
+}
+
+.img2::before {
+    content: url('../images/project-card-symbols/windowLogosLeft.svg');
+    
+    position: absolute;
+    left: 0.5rem;
+    top: -1rem;
 }
