@@ -48,8 +48,10 @@
 
 .languages-logos {
     margin-top: 1.5rem;
+    align-self: center;
 }
 
+.course img,
 .languages-logos img {
     align-self: center;
 
