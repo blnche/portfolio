@@ -10,6 +10,7 @@
     width: 72px;
 
     border-radius: 100%;
+    border: none;
 
     position: fixed;
     right: 1rem;
