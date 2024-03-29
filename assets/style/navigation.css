@@ -101,7 +101,7 @@ nav ul {
     }
 
     .nav-desktop li {
-        margin-inline: 5rem;
+        margin-inline: 3rem;
         font-family: var(--title-monospace);
         font-size: var(--body1-fs);
         position: relative;

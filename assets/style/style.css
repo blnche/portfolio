@@ -306,7 +306,7 @@ footer p {
     */
     
     header {
-        width: 80%;
+        width: 75%;
 
         display: flex;
         justify-content: end;
@@ -315,11 +315,11 @@ footer p {
 
     .sticky {
         position: fixed;
-        top: 2rem;
     }
-
+    
     .title {
         left: 2rem;
+        top: 2rem;
     }
 
     .cvLink {
