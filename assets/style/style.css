@@ -268,6 +268,7 @@ footer {
 
 footer p {
     text-align: center;
+    padding-block: 1rem;
 }
 
 /* ----------------------------- */
@@ -305,20 +306,24 @@ footer p {
     */
     
     header {
-        width: 100%;
+        width: 80%;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
     }
 
-    .title {
-        margin-left: 3rem;
+    .sticky {
+        position: fixed;
+        top: 2rem;
     }
 
-    .sticky {
-        position: sticky;
-        top: 3rem;
+    .title {
+        left: 2rem;
+    }
+
+    .cvLink {
+        right: 2rem;
     }
     
     /* ----------------------------- */

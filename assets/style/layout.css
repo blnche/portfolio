@@ -41,6 +41,10 @@
         /* scroll-snap-type: y mandatory; */
     }
 
+    .margin {
+        margin-top: 2.5rem;
+    }
+
     .layout {
         /* height: 100vh; */
         /* margin-top: 5rem; */

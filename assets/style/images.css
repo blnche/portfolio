@@ -145,7 +145,11 @@
         width: 64px;
     }
 
-    .languages-logos:first-child abbr:first-of-type{
+    .course-card .languages-logos:first-child {
+        background-color: red;
+    }
+
+    .languages-logos:first-child abbr:first-child img {
         margin-left: 1rem;
     }
 
