@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const navButton = document.getElementById('navButton');
     const nav = document.getElementById('nav');
     const navLinks = document.querySelectorAll('nav li a');
+    const html = document.querySelector('html');
 
     const toggleNav = () => {
 
@@ -24,12 +25,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
             nav.style.display = 'block';
 
+            html.style.overflowY = 'hidden';
+
         } else if (window.getComputedStyle(nav).display === 'block') {
 
             navButton.classList.add('close');
             navButton.classList.remove('open');
 
             nav.style.display = 'none';
+
+            html.style.overflowY = 'auto';
         }
     }
 
