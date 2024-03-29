@@ -279,6 +279,11 @@ footer p {
 
 @media (min-width: 769px) {
 
+    html, 
+    body {
+        overflow-x: auto; /*To prevent second image of main projects to create scroll bar*/
+    }
+
     h3 {
         width: 30vw;
         text-align: left;
@@ -337,11 +342,13 @@ footer p {
         margin-bottom: 2rem;
     }
 
-    .hero .social-links {
+    .social-links {
         width: 10vw;
-
+    
         justify-content: space-around;
+    }
 
+    .hero .social-links {
         position: absolute;
         bottom: 0.5rem;
         right: 2.5rem;
@@ -358,6 +365,22 @@ footer p {
         transform: rotate(180deg);
         bottom: 50%;
         left: 10%;
+    }
+
+    /* ----------------------------- */
+
+    /* ----------------------------- */
+    /**  
+    * HERO SECTION
+    */
+
+    .more-projects-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .more-projects p {
+        width: 100%;
     }
 
     /* ----------------------------- */

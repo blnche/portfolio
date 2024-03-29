@@ -47,8 +47,18 @@
         /* scroll-snap-align: start; */
     }
 
+    .layout:nth-child(3) {
+        height: 150vh;
+    }
+
     .layout:last-child {
         height: 80vh;
+        position: relative;
+        top: 12rem;
+    }
+
+    .layout:last-child > * {
+        margin-block: 2rem;
     }
 
     .courses {

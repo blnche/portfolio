@@ -148,4 +148,16 @@
     .languages-logos:first-child abbr:first-of-type{
         margin-left: 1rem;
     }
+
+    .project-img {
+        top: 0%;
+    }
+
+    .img1 {
+        transform: translateX(-93%);
+    }
+
+    .img2 {
+        transform: translateX(93%);
+    }
 }

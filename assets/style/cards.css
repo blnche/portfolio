@@ -111,4 +111,89 @@
         width: 360px;
         height: 584px;
     }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-project-card {
+        width: 30vw;
+
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .main-project-card .projects-actions,
+    .main-project-card .skills-list,
+    .main-project-card .card {
+        position: unset;
+    }
+
+    .main-project-card:nth-child(2),
+    .main-project-card:nth-child(2) h4 {
+        align-self: flex-end;
+    }
+    .main-project-card:nth-child(3),
+    .main-project-card:nth-child(3) h4 {
+        align-self: flex-start;
+    }
+
+    .main-project-card h4 {
+        margin-inline: 0;
+    }
+
+    /* .project-img {
+        display: none;
+    } */
+
+    .main-project-card .card {
+        width: 30vw;
+
+        order: 1;
+    }
+    
+    .main-project-card .skills-list {
+        flex-direction: row;
+        order: 2;
+        margin-inline: 0;
+    }
+    
+    .main-project-card .projects-actions {
+        order: 3;
+        margin-inline: 0;;
+    }
+
+    .main-project-card .skills-list li {
+        margin-inline: 0.5rem;
+    }
+
+    .main-project-card .projects-actions,
+    .project-card .projects-actions {
+        width: 5vw;
+    }
+
+    .project-card {
+        width: 20vw;
+        height: 30vh;
+
+        padding: 0.5rem 1rem;
+
+        position: relative;
+    }
+
+    .project-card .skills-list li {
+        margin-inline: 0.4rem
+    }
+    .project-card .skills-list li:first-child {
+        margin-left: 0;;
+    }
+
+    .project-card .projects-actions {
+        position: absolute;
+        top: 14.5rem;
+        right: 0.5rem;
+    }
 }

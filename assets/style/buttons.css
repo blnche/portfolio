@@ -41,3 +41,10 @@
     padding: 0.5rem 1rem;
     width: 9rem;
 }
+
+@media (min-width: 769px) {
+    .button-contact {
+        width: 14rem;
+        padding-block: 1.5rem;
+    }
+}
