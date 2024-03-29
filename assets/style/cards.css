@@ -37,7 +37,7 @@
 * Main Project Card
 */
 
-.main-project-card p {
+.main-project-card .card {
     background-color: var(--primary400);
     border-radius: 0.5rem;
 

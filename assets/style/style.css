@@ -211,7 +211,7 @@ h3:after,
     width: 24px;
 }
 
-.main-project-card p {
+.main-project-card .card {
     order: 2;
 }
 
