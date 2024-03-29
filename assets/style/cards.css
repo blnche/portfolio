@@ -132,6 +132,10 @@
         position: unset;
     }
 
+    .main-project-card:nth-child(2) {
+        margin-top: 2rem;
+    }
+
     .main-project-card:nth-child(2),
     .main-project-card:nth-child(2) h4 {
         align-self: flex-end;
@@ -159,6 +163,11 @@
         flex-direction: row;
         order: 2;
         margin-inline: 0;
+    }
+
+    .main-project-card .skills-list.right,
+    .main-project-card .projects-actions.right {
+        justify-content: end;
     }
     
     .main-project-card .projects-actions {

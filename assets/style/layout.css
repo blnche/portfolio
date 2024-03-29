@@ -42,19 +42,20 @@
     }
 
     .layout {
-        height: 100vh;
+        /* height: 100vh; */
         /* margin-top: 5rem; */
         /* scroll-snap-align: start; */
+        margin-bottom: 10rem;
     }
 
     .layout:nth-child(3) {
-        height: 150vh;
+        /* height: 150vh; */
     }
 
     .layout:last-child {
-        height: 80vh;
-        position: relative;
-        top: 12rem;
+        /* height: 80vh; */
+        /* position: relative;
+        top: 12rem; */
     }
 
     .layout:last-child > * {
