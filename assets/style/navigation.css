@@ -34,7 +34,7 @@
     background-image: url('../images/icons/solar_menu-dots-broken.svg');
 }
 
-nav {
+.nav-mobile {
     display: none;
 
     background-color: var(--background);
@@ -55,7 +55,7 @@ nav ul {
     display: block;
 }
 
-nav li {
+.nav-mobile li {
     font-size: var(--h1-fs);
     font-family: var(--title-display);
 
@@ -63,24 +63,62 @@ nav li {
     margin-right: 1rem;
 }
 
-nav li:first-child {
+.nav-mobile li:first-child {
     margin-top: 45vh;
 }
 
-nav a {
+.nav-mobile a {
     display: flex;
     justify-content: end;
 }
 
-.cvLink {
+.nav-mobile .cvLink {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
-
+    
     height: 72px;
     width: 146px;
 }
 
-nav .cvLink a {
+.nav-mobile .cvLink a {
     color: var(--primary1100);
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) {
+    .navButton {
+        display: none;
+    }
+
+    .nav-desktop ul {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .nav-desktop li {
+        margin-inline: 3rem;
+        font-family: var(--title-monospace);
+        font-size: var(--body1-fs);
+        position: relative;
+    }
+
+    .nav-desktop li span {
+        position: absolute;
+        left: -3rem;
+    }
+
+    .nav-desktop .cvLink {
+        padding: 0.5rem 2rem;
+
+        background-color: var(--primary700);
+    }
+
+    .nav-desktop .cvLink:hover {
+        background-color: var(--primary800);
+    }
 }

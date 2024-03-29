@@ -37,6 +37,12 @@ window.addEventListener('DOMContentLoaded', () => {
             html.style.overflowY = 'auto';
         }
     }
-
-    toggleNav();
+console.log(window.innerWidth > 768);
+    if (window.innerWidth > 768) {
+        console.log(nav);
+        nav.classList.add('nav-desktop');
+    } else {
+        toggleNav();
+        nav.classList.add('nav-mobile');
+    }
 })

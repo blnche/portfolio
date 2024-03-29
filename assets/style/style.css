@@ -266,3 +266,31 @@ footer p {
 }
 
 /* ----------------------------- */
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) {
+    
+
+    /* ----------------------------- */
+    /**  
+    * HEADER
+    */
+    
+    header {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title {
+        margin-left: 3rem;
+    }
+    
+    /* ----------------------------- */
+}

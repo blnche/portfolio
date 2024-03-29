@@ -97,3 +97,10 @@
 
     position: initial;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) {
+  
