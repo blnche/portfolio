@@ -126,4 +126,26 @@
         top: -5rem;
         right: -38rem;
     }
+
+    .course > img {
+        width: 150px;
+
+        position: absolute;
+        bottom: -85%;
+
+        z-index: 9999;
+    }
+
+    .languages-logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .languages-logos img {
+        width: 64px;
+    }
+
+    .languages-logos:first-child abbr:first-of-type{
+        margin-left: 1rem;
+    }
 }

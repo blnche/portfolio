@@ -42,18 +42,20 @@ ul {
 /* TYPEFACES */
 
 h1, 
-h2, 
-h3, 
-h4, 
-.body-ft-big {
+h2,
+.body-ft-big,
+h4 {
     font-family: var(--title-display);
+    font-weight: 600;
 }
 
+h3,
 .body-ft-small, 
 .skills-list li, 
 button, 
 footer p {
     font-family: var(--title-monospace);
+    font-weight: 400;
 }
 
 h2 {
@@ -276,6 +278,20 @@ footer p {
 }
 
 @media (min-width: 769px) {
+
+    h3 {
+        width: 30vw;
+        text-align: left;
+        align-self: center;
+    }
+
+    h3:after {
+        width: 30vw;
+    }
+
+    .numerotation {
+        font-size: var(--h4-fs);
+    }
     
 
     /* ----------------------------- */
@@ -293,6 +309,11 @@ footer p {
 
     .title {
         margin-left: 3rem;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 3rem;
     }
     
     /* ----------------------------- */

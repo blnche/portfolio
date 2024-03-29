@@ -107,4 +107,8 @@
 }
 
 @media (min-width: 769px) {
+    .course-card {
+        width: 360px;
+        height: 584px;
+    }
 }
