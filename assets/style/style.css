@@ -153,6 +153,8 @@ h3:after,
 }
 
 /* ----------------------------- */
+
+/* ----------------------------- */
 /**  
 * PROJECTS SECTION
 */
@@ -252,6 +254,7 @@ h3:after,
 */
 
 footer {
+    width: 100%;
     padding: 1rem;
 
     background-color: var(--primary300);
@@ -292,5 +295,49 @@ footer p {
         margin-left: 3rem;
     }
     
+    /* ----------------------------- */
+
+    /* ----------------------------- */
+    /**  
+    * HERO SECTION
+    */
+
+    .hero {
+        margin-top: 5rem;
+        padding: 5rem 3.5rem;
+        height: 50vh;
+    }
+
+    .text-wrapper {
+     width: 25vw;   
+    }
+
+    .hero .body-ft-big {
+        margin-bottom: 2rem;
+    }
+
+    .hero .social-links {
+        width: 10vw;
+
+        justify-content: space-around;
+
+        position: absolute;
+        bottom: 0.5rem;
+        right: 2.5rem;
+    }
+
+    .scrollText {
+        bottom: -190%;
+        left: 109%;
+
+        transform: rotate(90deg);
+    }
+
+    .scrollText:after {
+        transform: rotate(180deg);
+        bottom: 50%;
+        left: 10%;
+    }
+
     /* ----------------------------- */
 }

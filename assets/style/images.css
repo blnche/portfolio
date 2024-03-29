@@ -116,3 +116,14 @@
     left: 0.5rem;
     top: -1rem;
 }
+
+@media (min-width: 769px) {
+
+    .hero-img {
+        height: 330px;
+        width: 330px;
+
+        top: -5rem;
+        right: -38rem;
+    }
+}
