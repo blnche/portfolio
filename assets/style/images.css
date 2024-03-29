@@ -78,6 +78,8 @@
     
     position: absolute;
     top: 20%;
+
+    z-index: -1;
 }
 
 .img1 {
