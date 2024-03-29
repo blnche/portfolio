@@ -57,19 +57,19 @@ footer p {
 }
 
 h2 {
-    font-size: var(--h3-fs);
+    font-size: var(--h2-fs);
     font-weight: 500;
     text-align: left;
 }
 
 h3 {
-    font-size: var(--h4-fs);
+    font-size: var(--h3-fs);
     margin-block: 2rem;
 }
 
 h4, 
 .body-ft-big {
-    font-size: var(--h5-fs);
+    font-size: var(--h4-fs);
     margin: 1rem;
 }
 
