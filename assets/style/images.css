@@ -49,6 +49,11 @@
 .languages-logos {
     margin-top: 1.5rem;
     align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .course img,
@@ -75,6 +80,8 @@
 
     height: 277px;
     width: 360px;
+
+    background-position: center top;
     
     position: absolute;
     top: 20%;
@@ -83,7 +90,7 @@
 }
 
 .img1 {
-    background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
+    background-image: url('../images/project-img/Screenshot\ 2023-09-25\ at\ 16.12.18.png');
     left: 0;
     transform: translateX(-40%);
 }
@@ -97,7 +104,7 @@
 }
 
 .img2 {
-    background-image: url('../images/Screenshot\ 2024-03-27\ at\ 19.41.21.png');
+    background-image: url('../images/project-img/Screenshot\ 2024-03-29\ at\ 16.03.08.png');
     right: 0;
     transform: translateX(40%);
 }
