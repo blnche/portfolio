@@ -95,6 +95,10 @@ h3:after,
     position: absolute;
 }
 
+.numerotation {
+    font-size: var(--h5-fs);
+}
+
 /* ----------------------------- */
 
 /* ----------------------------- */
