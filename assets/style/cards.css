@@ -41,6 +41,11 @@
 * Main Project Card
 */
 
+.main-project-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .main-project-card .card {
     background-color: var(--primary400);
     border-radius: 0.5rem;

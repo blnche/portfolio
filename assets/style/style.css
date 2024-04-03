@@ -67,6 +67,7 @@ h2 {
 h3 {
     font-size: var(--h3-fs);
     margin-block: 2rem;
+    word-spacing: -0.5rem;
 }
 
 h4, 
@@ -188,8 +189,6 @@ h3:after,
 
     flex-direction: column;
     align-items: center;
-
-    margin-top: 1rem;
 }
 
 .skills-list li {
@@ -376,7 +375,7 @@ footer p {
 
     /* ----------------------------- */
     /**  
-    * HERO SECTION
+    * PROJECTS SECTION
     */
 
     .more-projects-wrapper {
@@ -386,6 +385,10 @@ footer p {
 
     .more-projects p {
         width: 100%;
+    }
+
+    .skills-list {
+        margin-top: 1rem;
     }
 
     /* ----------------------------- */
