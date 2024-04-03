@@ -268,7 +268,7 @@ footer {
 
 footer p {
     text-align: center;
-    padding-block: 1rem;
+    padding: 1rem;
 }
 
 /* ----------------------------- */
@@ -315,15 +315,11 @@ footer p {
 
     .sticky {
         position: fixed;
+        top: 2rem;
     }
     
     .title {
         left: 2rem;
-        top: 2rem;
-    }
-
-    .cvLink {
-        right: 2rem;
     }
     
     /* ----------------------------- */

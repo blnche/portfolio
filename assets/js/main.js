@@ -37,9 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
             html.style.overflowY = 'auto';
         }
     }
-console.log(window.innerWidth > 768);
+    
     if (window.innerWidth > 768) {
-        console.log(nav);
         nav.classList.add('nav-desktop');
     } else {
         toggleNav();

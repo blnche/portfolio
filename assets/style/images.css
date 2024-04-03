@@ -18,7 +18,7 @@
 * Site Logo
 */
 
-.title img {
+.title {
     position: relative;
     z-index: 9999;
 }
