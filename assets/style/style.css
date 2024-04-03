@@ -15,6 +15,7 @@
 
 html, 
 body {
+    scroll-behavior: smooth;
     overflow-x: hidden; /*To prevent second image of main projects to create scroll bar*/
 }
 

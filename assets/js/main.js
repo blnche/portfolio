@@ -44,4 +44,14 @@ window.addEventListener('DOMContentLoaded', () => {
         toggleNav();
         nav.classList.add('nav-mobile');
     }
-})
+
+    html.addEventListener('wheel', (event) => {
+        if((event.deltaY === 100) || (event.deltaY === -100)) {
+            event.preventDefault();
+            html.scrollBy({
+                top: event.deltaY,
+                behavior: 'smooth'
+            });
+        }
+    })
+});
