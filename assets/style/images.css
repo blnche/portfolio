@@ -164,4 +164,17 @@
     .img2 {
         transform: translateX(93%);
     }
+
+    .img1::before {
+        content: url('../images/project-card-symbols/windowLogosLeft.svg');
+
+        left: 0.5rem;
+    }
+
+    .img2:before {
+        content: url('../images/project-card-symbols/windowLogosRight.svg');
+    
+        left: 18.25rem;
+        width: fit-content;
+    }
 }
