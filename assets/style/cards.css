@@ -112,6 +112,36 @@
 }
 
 @media (min-width: 769px) {
+    section {
+        position: relative;
+    }
+    main > section::after {
+        content: '';
+        width: 48vw;
+        height: 50vh;
+
+        border-radius: 30px;
+        background-color: var(--primary200);
+
+        position: absolute;
+        z-index: -9999;
+    }
+
+    main > section:nth-child(1)::after {
+        top: 2rem;
+    }
+    main > section:nth-child(2)::after {
+        top: 25%;
+        width: 50vw;
+    }
+    main > section:nth-child(3)::after {
+        width: 60vw;
+        height: 69vh;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .course-card {
         width: 360px;
         height: 584px;

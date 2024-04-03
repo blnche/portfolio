@@ -131,7 +131,7 @@
         width: 150px;
 
         position: absolute;
-        bottom: -85%;
+        bottom: -5%;
 
         z-index: 9999;
     }
@@ -145,16 +145,15 @@
         width: 64px;
     }
 
-    .course-card .languages-logos:first-child {
-        background-color: red;
-    }
-
     .course-card:first-child .languages-logos abbr:nth-of-type(2) {
         margin-left: 1rem;
     }
 
-    .project-img {
-        top: 0%;
+    .main-project-card:nth-child(2) .project-img {
+        top: 0;
+    }
+    .main-project-card:nth-child(3) .project-img {
+        top: 1rem;
     }
 
     .img1 {
