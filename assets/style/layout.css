@@ -38,7 +38,7 @@
     }
 
     html {
-        /* scroll-snap-type: y mandatory; */
+        scroll-snap-type: y mandatory;
     }
 
     .margin {
@@ -48,7 +48,7 @@
     .layout {
         /* height: 100vh; */
         /* margin-top: 5rem; */
-        /* scroll-snap-align: start; */
+        scroll-snap-align: start;
         margin-bottom: 10rem;
     }
 

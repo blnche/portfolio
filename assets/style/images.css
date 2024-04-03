@@ -30,7 +30,7 @@
 .hero-img {
     background-image: url('../images/profil-picture.jpeg');
 
-    border-radius: 0.5rem;
+    border-radius: 30px;
 
     margin: auto;
     height: 9rem;

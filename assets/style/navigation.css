@@ -14,7 +14,7 @@
 
     position: fixed;
     right: 1rem;
-    bottom: 0.3rem;
+    bottom: 2rem;
     
     display: flex;
     justify-content: center;
@@ -26,12 +26,14 @@
 }
 
 .open {
+    background-color: transparent;
     background-image: url('../images/icons/clarity_window-close-line.svg');
 }
 .close {
-    box-shadow: 0 0 5px var(--secondary100);
-    background-color: var(--secondary100);
-    background-image: url('../images/icons/solar_menu-dots-broken.svg');
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    background-image: url('../images/icons/majesticons_more-menu.svg');
 }
 
 .nav-mobile {
@@ -130,9 +132,6 @@ nav ul {
     .nav-desktop .cvLink:hover,
     .nav-desktop li:hover {
         background-color: var(--primary800);
-        /* border-color: var(--primary900);
-        border-width: 2px; */
-        /* color: var(--primary1000); */
     }
 
     .nav-desktop li:last-child:hover {
