@@ -333,7 +333,7 @@ footer p {
     .hero {
         margin-top: 5rem;
         padding: 5rem 3.5rem;
-        height: 50vh;
+        /* height: 50vh; */
     }
 
     .text-wrapper {
@@ -358,7 +358,7 @@ footer p {
 
     .scrollText {
         bottom: -190%;
-        left: 109%;
+        left: 80%;
 
         transform: rotate(90deg);
     }
