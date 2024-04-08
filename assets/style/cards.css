@@ -128,7 +128,8 @@
     }
 
     main > section:nth-child(1)::after {
-        top: 2rem;
+        top: 5rem;
+        left: 5%;
     }
     main > section:nth-child(2)::after {
         top: 25%;
@@ -237,7 +238,7 @@
 
     .project-card .projects-actions {
         position: absolute;
-        top: 14.5rem;
+        top: 15rem;
         right: 0.5rem;
     }
 }

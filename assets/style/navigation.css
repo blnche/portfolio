@@ -14,7 +14,7 @@
 
     position: fixed;
     right: 1rem;
-    bottom: 0.3rem;
+    bottom: 2rem;
     
     display: flex;
     justify-content: center;
@@ -26,12 +26,14 @@
 }
 
 .open {
+    background-color: transparent;
     background-image: url('../images/icons/clarity_window-close-line.svg');
 }
 .close {
-    box-shadow: 0 0 5px var(--secondary100);
-    background-color: var(--secondary100);
-    background-image: url('../images/icons/solar_menu-dots-broken.svg');
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    background-image: url('../images/icons/majesticons_more-menu.svg');
 }
 
 .nav-mobile {
@@ -89,13 +91,19 @@ nav ul {
     justify-content: center;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-
-}
-
 @media (min-width: 769px) {
     .navButton {
         display: none;
+    }
+
+    .nav-desktop {
+        --animation-start: 200vh;
+        --animation-end: 220vh;
+
+        /* animation: movingNav linear forwards;
+        animation-timeline: view();
+        animation-range-start: var(--animation-start);
+        animation-range-end: var(--animation-end); */
     }
 
     .nav-desktop ul {
@@ -104,6 +112,11 @@ nav ul {
         justify-content: space-between;
 
         width: 50vw;
+
+        /* animation: movingUl linear forwards;
+        animation-timeline: view();
+        animation-range-start: var(--animation-start);
+        animation-range-end: var(--animation-end); */
     }
 
     .nav-desktop li {
@@ -115,11 +128,20 @@ nav ul {
         font-size: var(--h6-fs);
 
         position: relative;
-    }
 
+    }
+    
+    
     .nav-desktop li span {
         position: absolute;
         left: -3rem;
+    }
+    
+    .nav-desktop li:hover {
+        color: var(--text);
+    }
+    .nav-desktop li a {
+        /* animation: changingA linear forwards; */
     }
 
     .nav-desktop .cvLink {
@@ -130,12 +152,32 @@ nav ul {
     .nav-desktop .cvLink:hover,
     .nav-desktop li:hover {
         background-color: var(--primary800);
-        /* border-color: var(--primary900);
-        border-width: 2px; */
-        /* color: var(--primary1000); */
     }
 
     .nav-desktop li:last-child:hover {
         background-color: transparent;
+    }
+
+    /* animate nav so it goes up when scolling down, top: -5rem, and then appears at the right in new position fixed */
+
+    /* @keyframes movingNav {
+        100% {
+            position: fixed;
+            right: 0;
+            top: 40%;
+        }
+    } */
+
+    /* @keyframes movingUl {
+        100% {
+            flex-direction: column;
+            width: fit-content;
+        }
+    } */
+    
+    @keyframes changingA {
+        100% {
+            color: var(--secondary100);
+        }
     }
 }
