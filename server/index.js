@@ -4,7 +4,11 @@ import myProjects from './data/myProjects.js'
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://portfolio-v1-front.vercel.app/',
+    methods: ['GET'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}))
 app.use(express.json())
 
 const port = 3000
