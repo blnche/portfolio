@@ -28,16 +28,20 @@ const Projects = () => {
     }
 
     useEffect(()=> {
-        // fetchProjects()
+        fetchProjects()
     }, [])
 
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Error : {error}</p>
+    // if (loading) return <p>Loading...</p>
+    // if (error) return <p>Error : {error}</p>
 
     return (
         <>
-        <section className="prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[1em]">
+        <section className="flex flex-col items-center
+        prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[1em]
+        ">
             <h2>Projects</h2>
+            {loading && <p>Loading...</p>}
+            {error && <p>Error : {error}</p>}
             {projects && projects.map((project, index) => {
                 if(project.main_project) {
                     return (
@@ -48,9 +52,9 @@ const Projects = () => {
                 }
             })}
 
-            <div className="flex flex-col items-center">
-                <h3>Plus de projects</h3>
-                <div className="flex flex-wrap justify-center">
+            <div className="mt-6 flex flex-col items-center md:w-4/5">
+                {!loading && !error && <h3 className='my-6 text-3xl'>Plus de projects</h3>}
+                <div className="flex flex-wrap justify-center md:w-full md:justify-evenly">
                     {projects && projects.map((project, index) => {
                         if(!project.main_project) {
                             return (

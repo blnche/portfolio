@@ -4,11 +4,11 @@ import profilePicture from '../assets/profil.jpeg'
 const Hero = () => {
     return (
         <>
-            <section className=" hero bg-base-200 flex-col
+            <section className="hero min-h-screen bg-base-300 flex-col
             prose-ul:list-none prose-ul:flex 
             prose-li:mx-0.5
             ">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero-content flex-col lg:flex-row-reverse bg-base-100 rounded-[2rem] p-16">
                     <img className="mask mask-squircle w-72 max-w-sm rounded-lg shadow-2xl" src={profilePicture} alt="Profile Picture"/>
                     <div>
                         <p>Salut, moi c'est</p>

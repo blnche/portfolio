@@ -1,22 +1,28 @@
+import github from '../assets/icons/github.svg'
+import open_window from '../assets/icons/open-window.svg'
+
 const ProjectCard = (props) => {
     const {title, description, skills, repository, demo, picture, main_project} = props
 
     return (
         <>
-            <div className="prose card w-96 bg-base-100 shadow-xl m-1.5">
+            <div className="prose card w-[350px] md:w-96 bg-base-300 shadow-xl hover:shadow-2xl my-4
+            prose-img:m-0
+            ">
                 <div className="card-body">
 
                     <div className="card-actions">
-                        <div className="badge">Github</div>
-                        <div className="badge">Demo</div>
+                        {skills && skills.map((skill, index) => {
+                            return (<div key={index} className="badge">{skill}</div>)
+                        })}
                     </div>
 
                     <h3 className="card-title">{title}</h3>
                     <p>{description}</p>
 
                     <div className="card-actions justify-end">
-                        <div className="badge">Github</div>
-                        <div className="badge">Demo</div>
+                        <a href={repository}><img src={github} /></a>
+                        <a href={demo}><img src={open_window} /></a>
                     </div>
                 </div>
             </div>
