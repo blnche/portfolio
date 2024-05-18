@@ -7,7 +7,7 @@ const Projects = () => {
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    const API = 'https://portfolio-v1-api-three.vercel.app/'
+    const API = 'https://portfolio-v1-api-three.vercel.app/api/projects'
 
     const fetchProjects = async () => {
         try {
