@@ -10,14 +10,7 @@ function App() {
 
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <Academics />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
+      <h1>In construction...</h1>
     </>
   )
 }
