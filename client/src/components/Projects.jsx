@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import axios from 'axios'
+import MainProjectCard from "./MainProjectCard"
+import ProjectCard from "./ProjectCard"
 
 const Projects = () => {
 
@@ -37,8 +39,18 @@ const Projects = () => {
         <section>
             <h2>Projects</h2>
             {projects && projects.map((project, index) => {
-                return (
-                    <p key={index}>{project.title}</p>
+
+                if(project.main_project) {
+                    return (
+                        <React.Fragment key={index}>
+                            <MainProjectCard  {...project} />
+                        </React.Fragment>
+                    )
+                }
+                else return (
+                    <React.Fragment key={index}>
+                        <ProjectCard {...project} />
+                    </React.Fragment>
                 )
             })}
         </section>

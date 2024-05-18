@@ -1,8 +1,10 @@
+import './Academics.css'
+
 const Academics = () => {
     return (
         <>
             <section>
-                <h2>Formations</h2>
+                <h2 className='title'>Formations</h2>
                 <div>
                     <h3>Developpeuse Web Full Stack</h3>
                     <p>Mars 2024 - Mars 2025</p>
