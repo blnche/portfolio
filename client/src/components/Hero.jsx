@@ -1,4 +1,5 @@
 import SocialLinks from "./SocialLinks"
+import profilePicture from '../assets/profil.jpeg'
 
 const Hero = () => {
     return (
@@ -9,7 +10,7 @@ const Hero = () => {
             <p>Je suis</p>
             <p>Développeuse Web Full Stack</p>
             <p>Actuellement à la recherche d'une entreprise pour effectuer mon alternance.</p>
-            <img src="../assets/profil-picture.jpeg"/>
+            <img src={profilePicture} alt="Profile Picture"/>
             <SocialLinks />
         </section>
         </>
