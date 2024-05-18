@@ -14,10 +14,12 @@ import phpmyadmin from '../assets/logos/phpmyadmin.svg'
 const Academics = () => {
     return (
         <>
-            <section className='flex flex-col items-center'>
-                <h2 className='text-4xl'>Formations</h2>
-                <div className="flex w-3/4 justify-evenly">
-                    <div className="card w-96 bg-base-100 shadow-xl">
+            <section className='flex flex-col items-center 
+            prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[1em]
+            '>
+                <h2>Formations</h2>
+                <div className="flex flex-col w-3/4 justify-evenly md:flex-row">
+                    <div className="card w-72 md:w-84 lg:w-96 my-2 bg-base-100 shadow-xl">
                         <div className="card-body items-center text-center">
                             <div className="card-title">
                                 <h3 className='text-2xl'>Developpeuse Web Full Stack</h3>
@@ -41,7 +43,7 @@ const Academics = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-72 md:w-84 lg:w-96 my-2 bg-base-100 shadow-xl">
                         <div className="card-body items-center text-center">
                             <div className="card-title">
                                 <h3 className='text-2xl'>Developpeuse Web Full Stack (PHP)</h3>

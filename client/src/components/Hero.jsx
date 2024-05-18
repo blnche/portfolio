@@ -9,7 +9,7 @@ const Hero = () => {
             prose-li:mx-0.5
             ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img className="mask mask-squircle max-w-sm rounded-lg shadow-2xl" src={profilePicture} alt="Profile Picture"/>
+                    <img className="mask mask-squircle w-72 max-w-sm rounded-lg shadow-2xl" src={profilePicture} alt="Profile Picture"/>
                     <div>
                         <p>Salut, moi c'est</p>
                         <h2 className="text-5xl font-bold">Blanche Peltier</h2>

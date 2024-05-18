@@ -1,7 +1,7 @@
-const SocialLinks = () => {
+const SocialLinks = ({ className }) => {
     return (
         <>
-            <ul>
+            <ul className={className}>
                 <li><a href="">Github</a></li>
                 <li><a href="">LinkedIn</a></li>
                 <li><a href="">Email</a></li>

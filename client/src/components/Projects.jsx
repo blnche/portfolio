@@ -28,7 +28,7 @@ const Projects = () => {
     }
 
     useEffect(()=> {
-        fetchProjects()
+        // fetchProjects()
     }, [])
 
     if (loading) return <p>Loading...</p>
@@ -36,10 +36,9 @@ const Projects = () => {
 
     return (
         <>
-        <section>
-            <h2 className="text-4xl">Projects</h2>
+        <section className="prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[1em]">
+            <h2>Projects</h2>
             {projects && projects.map((project, index) => {
-
                 if(project.main_project) {
                     return (
                         <React.Fragment key={index}>
@@ -47,12 +46,22 @@ const Projects = () => {
                         </React.Fragment>
                     )
                 }
-                else return (
-                    <React.Fragment key={index}>
-                        <ProjectCard {...project} />
-                    </React.Fragment>
-                )
             })}
+
+            <div className="flex flex-col items-center">
+                <h3>Plus de projects</h3>
+                <div className="flex flex-wrap justify-center">
+                    {projects && projects.map((project, index) => {
+                        if(!project.main_project) {
+                            return (
+                                <React.Fragment key={index}>
+                                 <ProjectCard {...project} />
+                                </React.Fragment>
+                            )
+                        }
+                    })}
+                </div>
+            </div>
         </section>
         </>
     )
