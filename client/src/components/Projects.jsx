@@ -37,7 +37,7 @@ const Projects = () => {
     return (
         <>
         <section>
-            <h2>Projects</h2>
+            <h2 className="text-4xl">Projects</h2>
             {projects && projects.map((project, index) => {
 
                 if(project.main_project) {
