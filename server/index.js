@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename)
 const app = express()
 
 app.use(cors({
-    origin: ['https://portfolio-v1-front.vercel.app', 'http://localhost:5173'],
+    origin: 'https://blanchepeltier.app',
     methods: ['GET'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }))
