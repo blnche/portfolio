@@ -49,6 +49,16 @@ const myProjects = [
         picture:"",
         main_project: false
     },
+    {
+        id:"5",
+        title:"Portfolio",
+        description:"Ce projet présente une architecture client-serveur pour charger dynamiquement des projets et leurs images depuis le serveur. J'ai déployer deux projets distincts sur Vercel : un pour la partie client et un autre pour le serveur, tous deux provenant de mon repository GitHub.",
+        skills: ["react", "nodejs", "express", "tailwindcss", "vercel"],
+        repository:"https://github.com/blnche/portfolio",
+        demo:"",
+        picture:"",
+        main_project: false
+    }
 
 ]
 
