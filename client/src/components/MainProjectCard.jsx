@@ -1,9 +1,16 @@
-import imgTest from '../assets/project-img/school-townhall.png'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+import shoolProject from '../assets/project-img/school-townhall.png'
+import townHallProject from '../assets/project-img/wordpress-townhall.png'
 import github from '../assets/icons/github.svg'
 import open_window from '../assets/icons/open-window.svg'
 
 const MainProjectCard = (props) => {
-    const {title, description, skills, repository, demo, picture, main_project} = props
+    const {id, title, description, skills, repository, demo, picture, main_project} = props
+    
+    // const API = 'https://portfolio-v1-api-three.vercel.app'
+    const API = 'http://localhost:3000'
+    const pictureUrl = API+picture
 
     return (
         <>
@@ -15,7 +22,7 @@ const MainProjectCard = (props) => {
             prose-p:bg-base-300 prose-p:w-3/4 prose-p:shadow
             '>
                 <div className="mockup-window border bg-success aspect-video h-80 -z-10 absolute top-16 -left-3/4 md:top-12 md:left-0">
-                    <img src={imgTest} className='object-cover object-top h-full min-h-full min-w-full'/>
+                    <img src={pictureUrl} alt={title} className='object-cover object-top h-full min-h-full min-w-full'/>
                 </div>
                 
                 <h3 className='text-4xl self-center md:self-end p-2'>{title}</h3>

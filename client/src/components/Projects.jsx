@@ -42,10 +42,10 @@ const Projects = () => {
             <h2>Projects</h2>
             {loading && <p>Loading...</p>}
             {error && <p>Error : {error}</p>}
-            {projects && projects.map((project, index) => {
+            {projects && projects.map((project) => {
                 if(project.main_project) {
                     return (
-                        <React.Fragment key={index}>
+                        <React.Fragment key={project.id}>
                             <MainProjectCard  {...project} />
                         </React.Fragment>
                     )
@@ -55,10 +55,10 @@ const Projects = () => {
             <div className="mt-6 flex flex-col items-center md:w-4/5">
                 {!loading && !error && <h3 className='my-6 text-3xl'>Plus de projects</h3>}
                 <div className="flex flex-wrap justify-center md:w-full md:justify-evenly">
-                    {projects && projects.map((project, index) => {
+                    {projects && projects.map((project) => {
                         if(!project.main_project) {
                             return (
-                                <React.Fragment key={index}>
+                                <React.Fragment key={project.id}>
                                  <ProjectCard {...project} />
                                 </React.Fragment>
                             )
