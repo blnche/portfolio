@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
 
                     <div className="card-actions">
                         {skills && skills.map((skill, index) => {
-                            return (<div key={index} className="badge font-bold">{skill.toUpperCase()}</div>)
+                            return (<div key={index} className="badge font-bold invert">{skill.toUpperCase()}</div>)
                         })}
                     </div>
 
@@ -21,8 +21,8 @@ const ProjectCard = (props) => {
                     <p>{description}</p>
 
                     <div className="card-actions justify-end">
-                        <a href={repository}><img src={github} /></a>
-                        <a href={demo}><img src={open_window} /></a>
+                        {demo && <a href={demo}><img src={open_window}/></a>}
+                        {repository && <a href={repository}><img src={github}/></a>}
                     </div>
                 </div>
             </div>

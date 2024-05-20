@@ -4,7 +4,7 @@ import profilePicture from '../assets/profil.jpeg'
 const Hero = () => {
     return (
         <>
-            <section className="hero py-24 bg-base-300 flex flex-col justify-center
+            <section className="hero py-8 md:py-24 bg-base-300 flex flex-col justify-center
             prose-ul:list-none prose-ul:flex prose-ul:mt-8
             prose-li:mx-1.5
             prose-p:mt-2
