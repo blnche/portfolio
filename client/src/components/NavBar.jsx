@@ -2,13 +2,13 @@ import document from '../assets/icons/document.svg'
 const NavBar = () => {
     return (
         <>
-        <div className="navbar bg-base-100/75 backdrop-blur-lg">
+        <div className="navbar">
             <div className="navbar-start">
                 <a href="" className="btn btn-ghost text-3xl"><h1>{'{Blanche}'}</h1></a>
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-end flex">
-                    <a className="btn btn-ghost flex-row lg:hidden" href="#">
+                    <a className="btn btn-secondary mr-2 flex-row lg:hidden" href="#">
                     CV
                     <img src={document} />
                     </a>
