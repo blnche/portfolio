@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import AcademicsSkill from './AcademicsSkill'
 import bootstrap from '../assets/logos/bootstrap.svg'
 import html from '../assets/logos/html.svg'
 import css from '../assets/logos/css.svg'
@@ -15,6 +17,20 @@ import npm from '../assets/logos/npm.svg'
 import pug from '../assets/logos/pug.svg'
 
 const Academics = () => {
+
+    const [hover, setHover] = useState(false);
+    const [altText, setAltText] = useState('')
+
+    const handleAltText = (e) => {
+        setHover(true)
+        setAltText(e.target.alt)
+    }
+
+    const handleEmptyAltText = () => {
+        setHover(false)
+        setAltText('')
+    }
+
     return (
         <>
             <section id="academics" className='flex flex-col items-center 
@@ -34,15 +50,15 @@ const Academics = () => {
                             <p>Formation éligible à l'Aide Exeptionnelle de 6000€</p>
                             <div className="divider">Compétences</div>
                             <div className="grid grid-cols-3">
-                                <img src={html}/>
-                                <img src={css}/>
-                                <img src={js}/>
-                                <img src={php}/>
-                                <img src={phpmyadmin}/>
-                                <img src={sass}/>
-                                <img src={symfony}/>
-                                <img src={vuejs}/>
-                                <img src={bootstrap}/>
+                                <AcademicsSkill src={html} alt="HTML"/>
+                                <AcademicsSkill src={css} alt="CSS"/>
+                                <AcademicsSkill src={js} alt="Javascript"/>
+                                <AcademicsSkill src={php} alt="PHP"/>
+                                <AcademicsSkill src={phpmyadmin} alt="PhpMyAdmin"/>
+                                <AcademicsSkill src={sass} alt="Sass"/>
+                                <AcademicsSkill src={symfony} alt="Symfony"/>
+                                <AcademicsSkill src={vuejs} alt="Vue.js"/>
+                                <AcademicsSkill src={bootstrap} alt="Bootstrap"/>
                             </div>
                         </div>
                     </div>
@@ -56,12 +72,12 @@ const Academics = () => {
                             <p>Décerné le 8/11/2023</p>
                             <div className="divider">Compétences</div>
                             <div className="grid grid-cols-3">
-                                <img src={react}/>
-                                <img src={npm}/>
-                                <img src={node}/>
-                                <img src={express}/>
-                                <img src={mongodb}/>
-                                <img src={pug}/>
+                                <AcademicsSkill src={react} alt="React"/>
+                                <AcademicsSkill src={npm} alt="npm"/>
+                                <AcademicsSkill src={node} alt="Node.js"/>
+                                <AcademicsSkill src={express} alt="Express.js"/>
+                                <AcademicsSkill src={mongodb} alt="MongoDB"/>
+                                <AcademicsSkill src={pug} alt="Pug"/>
                             </div>
                         </div>
                     </div>
