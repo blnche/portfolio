@@ -31,17 +31,14 @@ const Projects = () => {
         fetchProjects()
     }, [])
 
-    // if (loading) return <p>Loading...</p>
-    // if (error) return <p>Error : {error}</p>
-
     return (
         <>
         <section id="projects" className="flex flex-col items-center
         prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[2em]
         ">
-            <h2>Projects</h2>
-            {loading && <p>Loading...</p>}
-            {error && <p>Error : {error}</p>}
+            <h2>Projets</h2>
+            {loading && <p>Chargement...</p>}
+            {error && <p>Erreur : {error}</p>}
             {projects && projects.map((project) => {
                 if(project.main_project) {
                     return (
@@ -53,7 +50,7 @@ const Projects = () => {
             })}
 
             <div className="mt-6 flex flex-col items-center md:w-4/5">
-                {!loading && !error && <h3 className='my-6 text-3xl'>Plus de projects</h3>}
+                {!loading && !error && <h3 className='my-6 text-3xl'>Plus de projets</h3>}
                 <div className="flex flex-wrap justify-center md:w-full md:justify-evenly">
                     {projects && projects.map((project) => {
                         if(!project.main_project) {
