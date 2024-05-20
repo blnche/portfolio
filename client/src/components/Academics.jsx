@@ -14,8 +14,8 @@ import phpmyadmin from '../assets/logos/phpmyadmin.svg'
 const Academics = () => {
     return (
         <>
-            <section className='min-h-screen flex flex-col items-center 
-            prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[1em]
+            <section className='flex flex-col items-center 
+            prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[2em]
             '>
                 <h2>Formations</h2>
                 <div className="flex flex-col w-3/4 justify-center gap-14 md:flex-row">

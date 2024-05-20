@@ -37,7 +37,7 @@ const Projects = () => {
     return (
         <>
         <section className="flex flex-col items-center
-        prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[1em]
+        prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[2em]
         ">
             <h2>Projects</h2>
             {loading && <p>Loading...</p>}

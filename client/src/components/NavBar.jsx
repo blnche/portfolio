@@ -28,10 +28,10 @@ const NavBar = () => {
                     <li><a href="">Projets</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <button className="btn btn-secondary flex-row text-lg font-normal">
+                <a href="https://drive.google.com/file/d/1_h-98KLV2MGtoFM4OZzObfjOx8cAY46T/view?usp=drive_link" target='_blank' className="btn btn-secondary flex-row text-lg font-normal">
                     CV
                     <img src={document} />
-                </button>
+                </a>
             </div>
         </div>
         </>

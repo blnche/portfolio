@@ -4,13 +4,14 @@ import profilePicture from '../assets/profil.jpeg'
 const Hero = () => {
     return (
         <>
-            <section className="hero min-h-screen bg-base-300 flex-col
-            prose-ul:list-none prose-ul:flex 
-            prose-li:mx-0.5
+            <section className="hero py-24 bg-base-300 flex flex-col justify-center
+            prose-ul:list-none prose-ul:flex prose-ul:mt-4
+            prose-li:mx-1.5
+            prose-p:mt-4
             ">
-                <div className="hero-content flex-col lg:flex-row-reverse bg-base-100 rounded-[2rem] p-16">
-                    <img className="mask mask-squircle w-72 max-w-sm rounded-lg shadow-2xl" src={profilePicture} alt="Profile Picture"/>
-                    <div>
+                <div className="w-11/12 md:w-auto hero-content flex-col md:flex-row-reverse items-center justify-center bg-base-100 rounded-[2rem] shadow-2xl p-8">
+                    <img className="md:mx-8 mask mask-squircle w-44 md:w-72 max-w-sm rounded-lg shadow-2xl" src={profilePicture} alt="Profile Picture"/>
+                    <div className="md:w-80">
                         <p>Salut, moi c'est</p>
                         <h2 className="text-5xl font-bold">Blanche Peltier</h2>
                         <p>Je suis</p>
