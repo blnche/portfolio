@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <>
             <section id="contact" className="prose self-center text-center mx-6 my-36 pb-8 flex flex-col items-center bg-success rounded-xl
-            prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[1em]
+            prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[2em]
             ">
                 <h2>Prochaine étape ?</h2>
                 <p className="text-2xl">Me contacter!</p>
