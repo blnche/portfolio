@@ -1,10 +1,14 @@
-const SocialLinks = () => {
+import github from '../assets/icons/github.svg'
+import linkedin from '../assets/icons/linkedin.svg'
+import email from '../assets/icons/email.svg'
+
+const SocialLinks = ({ className }) => {
     return (
         <>
-            <ul>
-                <li><a href="">Github</a></li>
-                <li><a href="">LinkedIn</a></li>
-                <li><a href="">Email</a></li>
+            <ul className={className}>
+                <li><a href="https://github.com/blnche"><img src={github} /></a></li>
+                <li><a href="mailto:peltierblanche@gmail.com"><img src={email} /></a></li>
+                <li><a href="https://www.linkedin.com/in/blanche-peltier/"><img src={linkedin} /></a></li>
             </ul>
         </>
     )

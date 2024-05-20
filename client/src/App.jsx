@@ -10,7 +10,14 @@ function App() {
 
   return (
     <>
-      <h1>In construction...</h1>
+      <Header />
+      <main className='flex flex-col justify-center'>
+        <Hero />
+        <Academics />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }
