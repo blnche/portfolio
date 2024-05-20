@@ -10,6 +10,9 @@ import mongodb from '../assets/logos/mongodb.svg'
 import node from '../assets/logos/node.svg'
 import sass from '../assets/logos/sass.svg'
 import phpmyadmin from '../assets/logos/phpmyadmin.svg'
+import express from '../assets/logos/express.svg'
+import npm from '../assets/logos/npm.svg'
+import pug from '../assets/logos/pug.svg'
 
 const Academics = () => {
     return (
@@ -29,7 +32,7 @@ const Academics = () => {
                             <p>Contrat d'apprentissage</p>
                             <p>Rythme: 3 semaines en entreprise / 1 semaine en école</p>
                             <p>Formation éligible à l'Aide Exeptionnelle de 6000€</p>
-                            <div className="divider"></div>
+                            <div className="divider">Compétences</div>
                             <div className="grid grid-cols-3">
                                 <img src={html}/>
                                 <img src={css}/>
@@ -51,11 +54,14 @@ const Academics = () => {
                             <p>Avril 2023 - Octobre 2023</p>
                             <p>Titre délivré par 3W Academy (NSF 326) Niveau III(FR) 5 (EU) Arrêté du 25/01/2023 et inscrit au RNCP (37273)</p>
                             <p>Décerné le 8/11/2023</p>
-                            <div className="divider"></div>
+                            <div className="divider">Compétences</div>
                             <div className="grid grid-cols-3">
-                                <img src={node}/>
                                 <img src={react}/>
+                                <img src={npm}/>
+                                <img src={node}/>
+                                <img src={express}/>
                                 <img src={mongodb}/>
+                                <img src={pug}/>
                             </div>
                         </div>
                     </div>
