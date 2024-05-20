@@ -8,8 +8,8 @@ import open_window from '../assets/icons/open-window.svg'
 const MainProjectCard = (props) => {
     const {id, title, description, skills, repository, demo, picture, main_project} = props
     
-    // const API = 'https://portfolio-v1-api-three.vercel.app'
-    const API = 'http://localhost:3000'
+    const API = 'https://portfolio-v1-api-three.vercel.app'
+    // const API = 'http://localhost:3000'
     const pictureUrl = API+picture
 
     return (
