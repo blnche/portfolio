@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
 
                     <div className="card-actions">
                         {skills && skills.map((skill, index) => {
-                            return (<div key={index} className="badge">{skill}</div>)
+                            return (<div key={index} className="badge font-bold">{skill.toUpperCase()}</div>)
                         })}
                     </div>
 

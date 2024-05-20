@@ -40,7 +40,7 @@ const MainProjectCard = (props) => {
         prose-code:font-bold prose-code:bg-transparent
         prose-p:bg-base-300 prose-p:w-3/4 prose-p:shadow
         '>
-            <div className="mockup-window border bg-secondary aspect-video h-80 -z-10 absolute top-16 -left-3/4 md:top-12 md:left-0">
+            <div className="mockup-window border bg-success aspect-video h-80 -z-10 absolute top-16 -left-3/4 md:top-12 md:left-0">
                 <img src={imgTest} className='object-cover object-top h-full min-h-full min-w-full'/>
             </div>
             <h3 className='text-4xl text-center md:text-right py-2'>{title}</h3>
@@ -48,7 +48,7 @@ const MainProjectCard = (props) => {
             <ul className='pr-1.5 self-end flex flex-col items-center md:flex-row'>
                 {skills && skills.map((skill, index) => {
                     return (
-                        <li key={index}><code className='text-sm md:text-base'>{skill.toUpperCase()}</code></li>
+                        <li key={index}><code className='text-sm md:text-base text-success'>{skill.toUpperCase()}</code></li>
                     )
                 })}
             </ul>

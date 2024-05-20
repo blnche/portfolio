@@ -8,7 +8,7 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-end flex">
-                    <a className="btn btn-secondary mr-2 flex-row lg:hidden" href="#">
+                    <a className="btn btn-success mr-2 flex-row lg:hidden" href="#">
                     CV
                     <img src={document} />
                     </a>
@@ -28,7 +28,7 @@ const NavBar = () => {
                     <li><a href="#projects">Projets</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="https://drive.google.com/file/d/1_h-98KLV2MGtoFM4OZzObfjOx8cAY46T/view?usp=drive_link" target='_blank' className="btn btn-secondary flex-row text-lg font-normal">
+                <a href="https://drive.google.com/file/d/1_h-98KLV2MGtoFM4OZzObfjOx8cAY46T/view?usp=drive_link" target='_blank' className="btn btn-success flex-row text-lg font-normal">
                     CV
                     <img src={document} />
                 </a>
