@@ -36,7 +36,7 @@ const Projects = () => {
 
     return (
         <>
-        <section className="flex flex-col items-center
+        <section id="projects" className="flex flex-col items-center
         prose-h2:text-4xl prose-h2:font-bold prose-h2:my-[2em]
         ">
             <h2>Projects</h2>
