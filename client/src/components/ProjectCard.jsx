@@ -3,6 +3,7 @@ import open_window from '../assets/icons/open-window.svg'
 
 const ProjectCard = (props) => {
     const {title, description, skills, repository, demo, picture, main_project} = props
+    console.log(demo)
 
     return (
         <>

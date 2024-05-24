@@ -12,6 +12,9 @@ const MainProjectCard = (props) => {
     // const API = 'http://localhost:3000'
     const pictureUrl = API+picture
 
+    console.log(demo)
+
+
     return (
         <>
             <div className='relative h-[30rem] landscape:h-80 landscape: my-8 md:w-3/4 lg:w-2/3 xl:w-3/5 my-2 py-2 flex flex-col items-end justify-between

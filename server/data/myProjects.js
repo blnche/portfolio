@@ -25,7 +25,7 @@ const myProjects = [
         description:"Création de mini-jeux faciles à prendre en main sur portable ou ordinateur pour se divertir en attendant son train ou lors d'une pause. Intégration d'une API pour personnaliser l'expérience.",
         skills: ["html", "css", "javascript", "api"],
         repository:"https://github.com/blnche/simple-games",
-        demo:"simple-games-rust.vercel.app",
+        demo:"https://simple-games-rust.vercel.app",
         picture:"",
         main_project: false
     },
