@@ -9,11 +9,7 @@ const __dirname = path.dirname(__filename)
 
 const app = express()
 
-app.use(cors({
-    origin: ['https://portfolio-v1-front.vercel.app', 'http://localhost:5173'],
-    methods: ['GET'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}))
+app.use(cors())
 app.use(express.json())
 app.use('/images', express.static(path.join(__dirname, 'data', 'projectsImages')));
 
