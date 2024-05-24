@@ -23,7 +23,7 @@ const Contact = () => {
                         />
                     </span>
                 </p>
-                <button className="btn btn-outline btn-wide mt-4">Envoyer moi un mail</button>
+                <a href='mailto:peltierblanche@gmail.com' className="btn btn-outline btn-wide mt-4">Envoyer moi un mail</a>
             </section>
         </>
     )
